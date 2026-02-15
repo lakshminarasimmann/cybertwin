@@ -1,0 +1,79 @@
+{
+  "description": "Lightweight decision rules extracted from ML models for Node.js inference",
+  "rules": [
+    {
+      "name": "credential_theft_detection",
+      "conditions": [
+        {
+          "feature": "typing_deviation",
+          "operator": ">",
+          "threshold": 0.4
+        },
+        {
+          "feature": "mouse_deviation",
+          "operator": ">",
+          "threshold": 0.4
+        },
+        {
+          "feature": "click_deviation",
+          "operator": ">",
+          "threshold": 0.3
+        }
+      ],
+      "logic": "AND",
+      "classification": "credential_theft",
+      "risk_boost": 25
+    },
+    {
+      "name": "social_engineering_detection",
+      "conditions": [
+        {
+          "feature": "read_deviation",
+          "operator": ">",
+          "threshold": 0.3
+        },
+        {
+          "feature": "click_deviation",
+          "operator": ">",
+          "threshold": 0.3
+        },
+        {
+          "feature": "entropy_deviation",
+          "operator": ">",
+          "threshold": 0.2
+        }
+      ],
+      "logic": "AND",
+      "classification": "social_engineering",
+      "risk_boost": 20
+    },
+    {
+      "name": "session_hijack_detection",
+      "conditions": [
+        {
+          "feature": "typing_deviation",
+          "operator": ">",
+          "threshold": 0.5
+        },
+        {
+          "feature": "mouse_deviation",
+          "operator": ">",
+          "threshold": 0.5
+        },
+        {
+          "feature": "read_deviation",
+          "operator": "<",
+          "threshold": 0.2
+        }
+      ],
+      "logic": "AND",
+      "classification": "session_hijack",
+      "risk_boost": 30
+    }
+  ],
+  "anomaly_thresholds": {
+    "low_risk_max_deviation": 0.15,
+    "medium_risk_max_deviation": 0.35,
+    "high_risk_min_deviation": 0.45
+  }
+}

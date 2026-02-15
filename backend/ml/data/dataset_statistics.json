@@ -1,0 +1,100 @@
+{
+  "total_samples": 6500,
+  "legitimate_samples": 5000,
+  "attack_samples": 1500,
+  "num_users": 100,
+  "num_features": 13,
+  "feature_stats": {
+    "typing_speed": {
+      "mean": 286.5903,
+      "std": 105.2119,
+      "min": 110.3191,
+      "max": 843.2652,
+      "median": 271.1201
+    },
+    "click_interval": {
+      "mean": 527.942,
+      "std": 219.6146,
+      "min": 95.4713,
+      "max": 1698.2644,
+      "median": 511.9586
+    },
+    "mouse_speed": {
+      "mean": 2.9197,
+      "std": 1.8177,
+      "min": 0.4305,
+      "max": 13.4043,
+      "median": 2.64
+    },
+    "read_time": {
+      "mean": 3969.5351,
+      "std": 2494.695,
+      "min": 405.6619,
+      "max": 19503.5506,
+      "median": 3536.081
+    },
+    "navigation_entropy": {
+      "mean": 0.4504,
+      "std": 0.2416,
+      "min": 0.1266,
+      "max": 1.0,
+      "median": 0.4116
+    },
+    "navigation_depth": {
+      "mean": 5.2,
+      "std": 2.0817,
+      "min": 1.0,
+      "max": 14.0,
+      "median": 5.0
+    },
+    "typing_deviation": {
+      "mean": 0.1922,
+      "std": 0.2839,
+      "min": 0.0,
+      "max": 1.4978,
+      "median": 0.0742
+    },
+    "click_deviation": {
+      "mean": 0.201,
+      "std": 0.2896,
+      "min": 0.0,
+      "max": 1.4983,
+      "median": 0.0746
+    },
+    "mouse_deviation": {
+      "mean": 0.2918,
+      "std": 0.5104,
+      "min": 0.0,
+      "max": 2.4978,
+      "median": 0.0763
+    },
+    "read_deviation": {
+      "mean": 0.3136,
+      "std": 0.555,
+      "min": 0.0,
+      "max": 2.9974,
+      "median": 0.0882
+    },
+    "entropy_deviation": {
+      "mean": 0.3507,
+      "std": 0.5834,
+      "min": 0.0,
+      "max": 2.9699,
+      "median": 0.076
+    },
+    "typing_click_ratio": {
+      "mean": 0.686,
+      "std": 0.588,
+      "min": 0.1319,
+      "max": 5.5907,
+      "median": 0.5115
+    },
+    "speed_entropy_product": {
+      "mean": 1.4867,
+      "std": 1.7953,
+      "min": 0.1314,
+      "max": 13.4043,
+      "median": 0.8435
+    }
+  }
+}
